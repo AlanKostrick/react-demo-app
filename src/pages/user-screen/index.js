@@ -28,7 +28,7 @@ const UserScreen = () => {
         }, 250);
 
         return () => clearTimeout(timer);
-    }, [user]);
+    }, [id, user]);
 
     //destructuring 
     const { avatar, first_name, last_name } = !loading && user.data;
